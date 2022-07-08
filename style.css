@@ -1,0 +1,121 @@
+:root {
+  --bgc: #ABC9FF;
+  --text: #F9F2ED;
+  --oColor: #4D96FF;
+  --xColor: #FF6B6B;
+  --turnColor: #F87474;
+  --rullColor: #CDF0EA;
+}
+
+html,
+body {
+  background-color: var(--bgc);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+header #title {
+  color: var(--text);
+  font-size: 80px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 10px;
+  width: 50%;
+  border-bottom: 1px solid var(--text);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#score {
+  position: relative;
+  margin: 25px 0;
+  color: var(--text);
+  font-size: 60px;
+  font-weight: 500;
+}
+
+section#score .focus {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--turnColor);
+  border-radius: 50%;
+}
+
+.focus-x {
+  left: -10px;
+}
+
+.focus-o {
+  right: -10px;
+  display: none;
+}
+
+section#game table {
+  border-collapse: collapse;
+}
+
+section#game table td {
+  cursor: pointer;
+  border: 3px dotted var(--text);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 80px;
+  vertical-align: bottom;
+}
+
+footer {
+  width: 450px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+footer button:hover {
+  color: var(--turnColor);
+}
+
+.turn-x {
+  color: var(--xColor);
+}
+
+.turn-o {
+  color: var(--oColor)
+}
+
+span#rull {
+  margin-bottom: 15px;
+  color: var(--rullColor);
+}
